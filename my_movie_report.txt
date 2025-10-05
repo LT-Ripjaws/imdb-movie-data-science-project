@@ -1,0 +1,68 @@
+========================================
+IMDB MOVIE ANALYSIS REPORT
+========================================
+
+DATASET OVERVIEW
+----------------------------------------
+Total Movies: 3790 
+Time Period: 1920 - 2016 
+Unique Directors: 1753 
+Unique Genres: 17 
+
+KEY STATISTICS
+----------------------------------------
+Average IMDb Score: 6.46 
+Average Budget: $44,723,828 
+Average Gross: $50,192,238 
+Average ROI: 5.18 
+Success Rate: 52.4% 
+
+TOP 10 HIGHEST RATED MOVIES
+----------------------------------------
+                                            movie_title imdb_score title_year
+1792                          The Shawshank Redemption         9.3       1994
+2988                                     The Godfather         9.2       1972
+65                                     The Dark Knight         9.0       2008
+2524                            The Godfather: Part II         9.0       1974
+326      The Lord of the Rings: The Return of the King         8.9       2003
+1734                                  Schindler's List         8.9       1993
+2912                                      Pulp Fiction         8.9       1994
+3557                    The Good, the Bad and the Ugly         8.9       1966
+95                                           Inception         8.8       2010
+259  The Lord of the Rings: The Fellowship of the Ring         8.8       2001
+
+
+TOP 10 MOST PROFITABLE MOVIES
+----------------------------------------
+                                    movie_title    profit       roi
+1                                       Avatar  523505847  2.208885
+29                              Jurassic World  502177271  3.347848
+26                                     Titanic  458672302  2.293362
+2682        Star Wars: Episode IV - A New Hope  449935665 40.903242
+2725                E.T. the Extra-Terrestrial  424449459 40.423758
+17                                The Avengers  403279547  1.833089
+483                              The Lion King  377783777  8.395195
+231  Star Wars: Episode I - The Phantom Menace  359544677  3.126475
+65                             The Dark Knight  348316061  1.882790
+420                           The Hunger Games  329999255  4.230760
+
+
+TOP 10 DIRECTORS (by avg IMDb score, min 5 films)
+----------------------------------------
+# A tibble: 10 × 3
+   director_name         Movies Avg_Score
+   <chr>                  <int>     <dbl>
+ 1 Christopher Nolan          8      8.43
+ 2 Quentin Tarantino          8      8.2 
+ 3 James Cameron              7      7.91
+ 4 Peter Jackson              9      7.89
+ 5 Alejandro G. Iñárritu      5      7.84
+ 6 David Fincher             10      7.75
+ 7 Martin Scorsese           16      7.68
+ 8 Francis Ford Coppola       9      7.66
+ 9 Wes Anderson               7      7.63
+10 Paul Greengrass            7      7.59
+
+========================================
+END OF REPORT
+========================================
