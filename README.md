@@ -11,8 +11,8 @@
 
 ## 📖  Overview  
 
-An academic data analysis and machine learning project using the IMDB 5000 Movies dataset to predict movie ratings and analyze factors influencing box office success.
-Also features Visualizations, EDA, Data-preprocessing. It is also the first Data-Science project i did using the R-language.
+My first academic data analysis and machine learning project using the IMDB 5000 Movies dataset to predict movie ratings and analyze factors influencing box office success using the R language.
+Also features Visualizations, EDA, Data-preprocessing.
 
 This project performs:
 
@@ -111,7 +111,9 @@ investment_decision(100000000, 140, "Action", 7.5)
 - **Source:** IMDB 5000 Movies Dataset  
 - **Original Size:** ~5,000 movies  
 - **After Cleaning:** ~3,800 movies  
-- **Time Period:** Various years (focus on recent decades)  
+- **Time Period:** Various years (focus on recent decades)
+- 
+Taken from kaggle: <a href='https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset'>Imdb 5000 movie data-set</a>
 
 ### 🔑 Key Variables
 
@@ -233,3 +235,77 @@ investment_decision(100000000, 140, "Action", 7.5)
 - Saved models with metadata (`.rds`)
 
 ## 📈 KEY INSIGHTS
+### 📊 Model Performance Summary
+
+### 🎬 Regression Models *(IMDb Score Prediction)*
+
+| Model | RMSE | MAE | R² | Status |
+|--------|------|------|------|---------|
+| **Random Forest** | 0.65 | 0.49 | NA | ✅ Best |
+| **Linear Regression** | 0.77 | 0.58 | NA | ✅ Baseline |
+
+📖 **Interpretation:**  
+Predicts IMDb scores within **±0.65 points** on a 1–10 scale.
+
+### 💰 Classification Models *(Profitability Prediction)*
+
+| Model | Accuracy | Precision | Recall | F1-Score | Status |
+|--------|-----------|-----------|---------|-----------|---------|
+| **Random Forest** | 82% | 0.84 | 0.86 | 0.85 | ✅ Best |
+| **Logistic Regression** | 75% | 0.78 | 0.82 | 0.80 | ✅ Baseline |
+
+📖 **Interpretation:**  
+Correctly predicts **movie profitability 82% of the time**.
+
+### 💰 Financial Insights
+-  **Budget Sweet Spot:** Medium-budget films ($10M–$50M) achieve **40% higher ROI** than blockbusters
+-  **Profitability Rate:** ~70% of movies are profitable overall  
+-  **Quality Matters:** Movies with **IMDb > 7.0** have **85% profitability rate**  
+-  **High Budget ≠ Profit:** Correlation between budget and profit is **-0.95**
+-  There are more comedy movies, but horror movies tend to do better for profit even if the imdb score for them is lower.
+
+### 🎬 Quality Insights
+-  **Genre Impact:** Drama/Biography rate **0.5 points higher** than Horror  
+-  **Director Effect:** Top directors maintain **7.0+ average** vs 6.5 overall  
+-  **Score Trend:** IMDb scores slightly declining over past decade  
+-  **Duration:** Optimal movie length is **90–150 minutes**  
+
+### 🔮 Predictive Insights
+-  **Top Predictor (Regression):** Budget (financial scale) 
+-  **Top Predictor (Classification):** Number of voted users (engagement)  
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+- ❌ **Issue:** "Cannot open file"  
+  ✅ **Solution:** Check working directory with `getwd()`, use `setwd()` to set the correct path  
+
+- ❌ **Issue:** "Package not found"  
+  ✅ **Solution:** Run `source("Required_dependencies.R")` to install all dependencies  
+
+- ❌ **Issue:** "Download failed"  
+  ✅ **Solution:** Check your internet connection or download the dataset manually from the URL in `main.R`  
+
+- ❌ **Issue:** "Not enough memory"  
+  ✅ **Solution:** Reduce dataset size or use `data.table` for large datasets  
+
+## 📄 License
+This project is open source and available under the **MIT License**.  
+
+## 👤 Author
+*Chinmoy Guha*  
+
+- GitHub: [@LT-Ripjaws](https://github.com/LT-Ripjaws)  
+- Email: chinmoyguha676z@gmail.com
+- 
+### 📊 Project Status
+🚧 Active development – Version 1.0.0
+### ⭐ If you found this project helpful, please consider giving it a star! and please excuse any mistakes! :)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/242390524-0c7eb6ed-663b-4ce4-bfbd-18239a38ba1b.gif" alt="Profile Banner" width="70%" height = "50%" />
+</p>
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=FF6B6B&center=true&vCenter=true&width=700&lines=Thanks+for+visiting!+👾;Drop+a+star+⭐+if+you+like+it;Let's+build+something+awesome+together!+🚀"> </p>
+<p align="center">
+<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" width="30%">
+</p>
