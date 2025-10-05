@@ -300,7 +300,7 @@ This project is open source and available under the **MIT License**.
 - Email: chinmoyguha676z@gmail.com
 - 
 ### 📊 Project Status
-🚧 Active development – Version 1.0.0
+🚧 Completed development – Version 1.0.0
 ### ⭐ If you found this project helpful, please consider giving it a star! and please excuse any mistakes! :)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/242390524-0c7eb6ed-663b-4ce4-bfbd-18239a38ba1b.gif" alt="Profile Banner" width="70%" height = "50%" />
