@@ -274,6 +274,11 @@ Correctly predicts **movie profitability 82% of the time**.
 -  **Top Predictor (Regression):** Budget (financial scale) 
 -  **Top Predictor (Classification):** Number of voted users (engagement)  
 
+### FIGURE EXAMPLE:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LT-Ripjaws/imdb-movie-data-science-project/refs/heads/main/output/figures/roi_by_genre.png" alt="Intro" width="500" height="400" />
+</p>
+
 ## 🐛 Troubleshooting
 
 ### Common Issues
